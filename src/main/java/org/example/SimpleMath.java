@@ -1,10 +1,8 @@
 package org.example;
 import java.util.Scanner;
 /**
- * Simple Math function that calculates
- * the multiple, addition, division,
- * and subtraction of two numbers
- *
+ * UCF COP3330 Summer 2021 Assignment 1 Solutions
+ *  *  Copyright 2021 Vincent Verapen
  */
 public class SimpleMath
 {
@@ -17,8 +15,8 @@ public class SimpleMath
         System.out.println("What is the second number? ");
         String secondNumber = secondNum.next();
         Convert num = new Convert();
-        int num1 = num.convertNum(firstNumber);
-        int num2 = num.convertNum(secondNumber);
+        double num1 = num.convertNum(firstNumber);
+        double num2 = num.convertNum(secondNumber);
         PrintFunctions print = new PrintFunctions();
         print.printFunction(num1, num2);
     }
